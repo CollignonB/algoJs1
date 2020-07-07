@@ -1,3 +1,7 @@
-for (var i = 0; i <= 100; i +=2){
-    console.log(i + "\n");
+function poolFilling(largeur, Longueur, profondeur, debit){
+    var poolVolume = largeur * Longueur * profondeur;
+    return poolVolume/debit;
 }
+
+
+console.log("il va faloir " + poolFilling(10,10,5, 20) + " minutes pour remplir la piscine");
