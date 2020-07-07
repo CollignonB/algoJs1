@@ -1,12 +1,6 @@
-var rayon = parseInt(prompt("Entrez la valeur du rayon du cercle : "));
-
-function aireCercle (rayon){
-    return (Math.PI * rayon*rayon);
+for (var i = 1; i <= 100; i++){
+    if (i % 3 === 0 && i % 5 === 0){console.log(i + " FIZZBUZZ");}
+    else if( i % 3 === 0 ){console.log(i + " FIZZ");}
+    else if (i % 5 === 0){console.log(i + " BUZZ");}
+    else {console.log(i);}
 }
-
-function perimetreCercle (rayon){
-    return (rayon * 2 * Math.PI);
-}
-console.log(rayon);
-console.log("lair du cercle est de : "+ aireCercle(rayon).toFixed(2) + "\nLe perimètre du cercle est de : " 
-                + perimetreCercle(rayon).toFixed(2));
